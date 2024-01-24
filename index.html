@@ -3,338 +3,430 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tail-daisy web</title>   
+    <title>daisyui-web </title>   
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- manrope -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<!-- taiwind custom color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 <style>
-  .font-manrope{
-    font-family: 'Manrope', sans-serif;
-  }
+    .font-manrope{
+        font-familyan: 'Manrope', sans-serif;
+    }
 </style>
+
 </head>
 <body class="font-manrope">
     <header>
-       <div>
-        <div class="carousel">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="Images/1 - Copy.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
+        <div class="container mx-auto relative">
+            <div class="carousel ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
+              <div class=" w-72 absolute mx-96 left-96 -my-44 bg-black ">
+                <h3 class="text-[#FFF] font-extrabold ">Meet all the heroes from the field</h3>
+                <p class="font-bold text-xs text-yellow-50">Dit amet consectetur. Condimentum dignissim adipiscing aliquam<br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div><br><br>
+              <div class="text-center">
+                <h2 class="text-[#131318] text-3xl font-medium py-2">Professional Hockeys Club</h2>
+                <p class="text-xs">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br>Purus urna in sit nullam proin. </p><br><br>
             </div>
-          </div> 
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="Images/2.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
+        </div>
+        </div>
     </header>
     <main>
-      <section class="text-center my-20 ">
-      <h2 class="text-black font-extrabold text-3xl">Professional Hockeys Club</h2>
-      <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam<br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
-    </section>
-    <section class=" flex grid grid-cols-1  md:grid-cols-4  lg:grid-cols-4 ">
-      <div>
-        <img class="mx-7 -my-6 " src="Images/80-percent-pie-chart-circle-diagram-business-illustration-percentage-infographics-vector.jpg" alt="">
-        <h3 class="mx-20 font-bold text-2xl my-3 ">Prayer Facility</h3>
-        <p class="mx-6 font-x">Amet consectetur. Condimentum dignissim adipiscing .</p>
-      </div>
-     
-      <div>
-        <img class="mx-7 -my-6 " src="Images/images.png" alt="">
-        <h3 class="mx-20 font-bold text-2xl my-3 ">Experienced Coach</h3>
-        <p class="mx-6 ">Amet consectetur. Condimentum dignissim adipiscing .</p>
-      </div>
-     
-      <div>
-        <img class="mx-7 -my-6 w-64" src="Images/157735296-100-circle-percentage-diagrams-100-percentage-ready-to-use-for-web-design-infographic-or-business.jpg" alt="">
-        <h3 class="mx-20 font-bold text-2xl my-3">Senior Player</h3>
-        <p class="mx-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
-      </div>
-     
-      <div>
-        <img class="mx-7 -my-6 w-64" src="Images/images.png" alt="">
-        <h3 class="mx-20 font-bold text-2xl my-3">Training Ground</h3>
-        <p class="mx-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
-      </div>
-     
-     
-     
-    </section><br><br>
-    <section class="text-center">
-      <h3 class="text-black font-extrabold text-3xl mb-4">Program Sections</h3>
-      <p class=" font-bold">Dit amet consectetur. Condimentum dignissim adipiscing <br>  aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-    </section>
-    <br><br><br>
-   <section class=" flex gap-5 grid grid-cols-1  md:grid-cols-2 ">
-    <div class="relative ">
-      <div class="">
-        <img src="Images/2.png" alt="">
-      </div>
-      <div class="absolute -my-52 ">
-        <h3 class="text-2xl font-extrabold text-white">Junior Program</h3>
-        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
-          enim sagittis turpis in magna. Id et sed euismod natoque <br>amet nunc morbi nulla. Tortor congue sed et in.</p>
-          <button class="bg-[#FF4240] text-white p-2">Register Now!</button>
-      </div>
-      
-    </div>
-    <div>
-      <div class=" relative">
-        <img src="Images/3.png" alt="">
-      </div>
-      <div class="absolute -my-52">
-        <h3 class="text-2xl font-extrabold text-white">Junior Program</h3>
-        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
-          enim sagittis turpis in magna. Id et sed euismod natoque <br>amet nunc morbi nulla. Tortor congue sed et in.</p>
-          <button class="bg-[#FF4240] text-white p-2">Register Now!</button>
-      </div>
-    </div>
-   </section>
-   <br>
-   <section>
-   <div class="relative">
-    <img src="Images/4.png" alt="">
-   </div>
-   <div class="absolute -my-52">
-    <h3 class="text-white text-3xl my-3">Professional Program</h3>
-    <p class="text-black">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit<br> 
-      enim sagittis turpis in magna. Id et sed euismod natoque<br> amet nunc morbi nulla. Tortor congue sed et in.</p>
-      <button class="bg-[#FF4240] text-white p-2">Register Now!</button>
-   </div>
-  </section>
-  <br><br>
-  <section class="text-center">
-    <h3 class="font-extrabold text-3xl my-2">Our New Products</h3>
-    <p class="font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
-  </section>
-  <br><br>
-  <section class="flex gap-10 grid grid-cols-1 md:grid-cols-2">
-   <div>
-    <div class="flex ">
-      <div >
-        <img src="Images/5.png" alt="">
-      </div>
-      <div class="my-1">
-        <div class="flex my-1">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        
-        <h3 class="text-black font-bold text-xl my-3">World Cup Flags Football</h3>
-        <p claas="font-bold text-xl my-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold my-4">Price - $22.00</h3>
-      </div>
-    </div><br><br>
-    <div class="flex">
-      <div >
-        <img src="Images/7.png" alt="">
-      </div>
-      <div class="my-10">
-        <div class="flex ">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        <h3 class="text-black font-bold text-xl ">Cap For Hockeys</h3>
-        <p claas="font-bold text-xl ">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold ">Price - $22.00</h3>
-      </div>
-    </div><br> <br>
-    <div class="flex">
-      <div >
-        <img src="Images/9.png" alt="">
-      </div>
-      <div class="my-10">
-        <div class="flex my-1">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        <h3 class="text-black font-bold text-xl ">World Cup Flags Football</h3>
-        <p claas="font-bold text-xl ">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold ">Price - $22.00</h3>
-      </div>
-    </div>
-   </div>
-   <div>
-    <div class="flex">
-      <div >
-        <img src="Images/6.png" alt="">
-      </div>
-      <div class="my-10">
-        <div class="flex my-1">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        <h3 class="text-black font-bold text-xl ">World Cup Flags Football</h3>
-        <p claas="font-bold text-xl ">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold ">Price - $22.00</h3>
-      </div>
-    </div><br><br>
-    <div class="flex">
-      <div >
-        <img src="Images/8.png" alt="">
-      </div>
-      <div class="my-10">
-        <div class="flex my-1">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        <h3 class="text-black font-bold text-xl ">World Cup Flags Football</h3>
-        <p claas="font-bold text-xl ">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold ">Price - $22.00</h3>
-      </div>
-    </div><br> <br>
-    <div class="flex">
-      <div >
-        <img src="Images/10.png" alt="">
-      </div>
-      <div class="my-10">
-        <div class="flex my-1">
-          <span class="flex"><img src="Images/Frame.png" alt="">5.0</span>
-        <span class="flex"><img src="Images/Frame (1).png" alt="">20</span>
-        <span class="flex"><img src="Images/Frame (2).png" alt="">200</span>
-        </div>
-        <h3 class="text-black font-bold text-xl ">World Cup Flags Football</h3>
-        <p claas="font-bold text-xl ">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-        <h3 class="text-red-700 font-extrabold ">Price - $22.00</h3>
-      </div>
-    </div>
-   </div>
+            <section class="container mx-auto">
+                <div class="flex gap-24 grid grid-cols-1 md:grid-cols-4">
+                    <div class="mx-10 relative">
+                        <div><img src="Images/Group 9 (3).svg" alt="">
+                            <span class="absolute -my-16 mx-10 text-xl font-extrabold">87%</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#131318] text-xl py-2">Prayer Facility</h4>
+                            <p>Amet consectetur. Condimentum<br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div class="mx-10 relative">
+                        <div><img src="Images/Group 9 (1).svg" alt="">
+                            <span class="absolute -my-16 mx-10 text-xl font-extrabold">95%</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#131318] text-xl py-2">Experienced Coach</h4>
+                            <p>Amet consectetur. Condimentum<br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div class="mx-10 relative">
+                        <div><img src="Images/Group 9 (2).svg" alt="">
+                            <span class="absolute -my-16 mx-10 text-xl font-extrabold">90%</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#131318] text-xl py-2">Senior Player</h4>
+                            <p>Amet consectetur. Condimentum<br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div class="mx-10 relative">
+                        <div><img src="Images/Group 9.svg" alt="">
+                            <span class="absolute -my-16 mx-10 text-xl font-extrabold">80%</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#131318] text-xl py-2">Training Ground</h4>
+                            <p>Amet consectetur. Condimentum<br> dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <br><br>
+                    <div class="text-center">
+                        <h2 class="text-3xl text-[#131318] font-extrabold py-2">Program Sections</h2>
+                        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis<br> placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div><br><br>
+                    <div class="">
+                        <div class="flex gap-3 grid grid-cols-1 md:grid-cols-2  ">
+                        <div class=" relative">
+                            <img class="w-full h-auto" src="Images/2.png" alt="">
+                            <div class="absolute -my-48"><h3 class="text-2xl text-white font-extrabold">Junior Program</h3>
+                            <p class="text-[#FFF] py-2 font-medium text-xs">Dolor sit amet consectetur. Ut urna diam quis sagittis.<br> Elit elit 
+                                enim sagittis turpis in magna.<br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="font-medium text-xl text-white  bg-[#FF4240]">Register Now!</button></div>
+                            <div>
 
-  </section>
-  <br><br>
-  <section class="text-center">
-    <h3 class="text-[#131318] text-3xl font-extrabold py-7">Clients Question</h3>
-    <p class="text-xl fon">Dit amet consectetur. Condimentum dignissim adipiscing aliquam<br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
-  </section><br><br>
-  <section class="flex gap-24 justify-center grid grid-cols-1 md:grid-cols-2">
-    <div>
-      <img src="Images/11.png" alt="">
-    </div>
-   <div>
-    <div class="flex">
-      <div>
-        <h6>Our Equipment</h6>
-        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. <br>Elit elit enim sagittis turpis in magna.</p>
-      </div>
-      <div><h1 class=" w-6 h-6 text-black">_</h1></div>
-    </div><br>
-    <div class="flex">
-      <div>
-        <h6>Hockey Training</h6>
-      </div>
-      <div><h1 class="px-72 text-black">+</h1></div>
-    </div><br>
-    <div class="flex">
-      <div>
-        <h6>Private Lessons</h6>
-      </div>
-      <div><h1 class="px-72 text-black">+</h1></div>
-    </div><br>
-    <div class="flex">
-      <div>
-        <h6>Ski Touring</h6>
-      </div>
-      <div><h1 class="px-80 text-black">+</h1></div>
-    </div><br>
-    <div class="flex">
-      <div>
-        <h6>Booking are</h6>
-      </div><br>
-      <div><h1 class="px-80 text-black">+</h1></div>
-    </div><br>
-    <div class="flex">
-      <div>
-        <h6>Pricings are</h6>
-      </div>
-      <div><h1 class="px-80 text-black">+</h1></div>
-    </div>
-   </div>
-   
-    
-  </section><br><br>
-  <section class="text-center">
-    <h2 class="text-[#131318] text-3xl font-extrabold">Get In Touch</h2>
-    <p class="text-black text-xl">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
-  </section><br><br>
-  <section class="flex  grid grid-cols-1 md:grid-cols-2 ">
-    
-      <div>
-        <div class="mx-4 px-5 py-5 bg-slate-100 w-64 h-52 align-middle">
-          <img  src="Images/Group 1171275317.png" alt=""><br>
-          <h4 >Phone Number :</h4><br>
-          <h4>01826978811</h4>
-        </div><br>
-        <div class="mx-4 px-5 py-5 bg-slate-100 w-64 h-52 ">
-          <img src="Images/Group 1171275318.png" alt="">
-          <h4>Email : <br>
-            khalil.oyen58@gmail.com
-          </h4>
-        </div><br>
-        <div class="mx-4 px-5 py-5 bg-slate-100 w-64 h-52 ">
-          <img src="Images/Group 1171275321.png" alt="">
-          <h4>Location : 
-            152/1 Mohakhali Wireless Gate
-          </h4>
-        </div>
-      </div>
-      <div class="grid-flow-col ">
-       <div class="flex gap-6 grid grid-cols-1 md:grid-cols-2">
-        <input class="bottom-2 bg-orange-50 p-5 w-80" type="" placeholder="Enter your full name">
-        <input class="bottom-2 bg-orange-50 p-5 w-80" type="" placeholder="Enter your email">
-       </div><br><br>
-       <div class="flex gap-6 grid grid-cols-1 md:grid-cols-2"> <input class="bottom-2 bg-orange-50 p-5 w-80" type="" placeholder="Enter your subject">
-        <input class="bottom-2 bg-orange-50 p-5 w-80" type="" placeholder="Enter your phone number"></div><br>
-        <div class="grid grid-cols-1">
-          <input class="w-full h-96 bg-orange-50 " type="text" placeholder="Write your message"><br><br>
-        <button class="w-full bg-[#FF4240] h-10">Send Message</button>
-        </div>
-      </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="w-full h-auto" src="Images/3.png" alt="">
+                            <div class="absolute -my-48"><h3 class="text-2xl text-white font-extrabold">Junior Program</h3>
+                                <p class="text-[#FFF] py-2 font-medium text-xs">Dolor sit amet consectetur. Ut urna diam quis sagittis.<br> Elit elit 
+                                    enim sagittis turpis in magna.<br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                                <button class="font-medium text-xl text-white  bg-[#FF4240]">Register Now!</button></div>
+                                <div>
+                        </div>
+                    </div>
 
-  </section><br><br>
-   
-   
-   
-    </main>
-    <footer class="footer p-10 bg-black text-base-content">
-      <nav>
-        <header class="footer-title text-white">Get In Touch</header> 
-        <p class="text-white">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor.<br> Purus urna in sit nullam proin. </p>
-      </nav> 
-      <nav>
-        <header class="footer-title text-white">Company</header> 
-          <a class="link link-hover text-white">About us</a>
-        <a class="link link-hover text-white">Leadership</a>
-        <a class="link link-hover text-white">Careers</a>
-        <a class="link link-hover text-white">News & Article</a>
-        <a class="link link-hover text-white">Legal Notice</a>
-      </nav> 
-      <nav>
-        <header class="footer-title text-white">Support</header> 
-        <a class="link link-hover text-white">Help Center</a>
-        <a class="link link-hover text-white">FAQ</a>
-        <a class="link link-hover text-white">Ticket Support</a>
-        <a class="link link-hover text-white  ">Contact Us</a>
-      </nav> 
-      <nav>
-        <header class="footer-title text-white">Services</header> 
-        <a class="link link-hover text-white">Academy</a>
-        <a class="link link-hover text-white">Group Lesson</a>
-        <a class="link link-hover text-white">Private Lesson</a>
-      </nav>
-    </footer>
-      
-  
+                    </div><br>
+                    <div class="">
+                        <img class="w-full h-auto"  src="Images/4.png" alt="">
+                        <div class="absolute -my-48"><h3 class="text-2xl text-white font-extrabold">Professional Program</h3>
+                            <p class="text-[#FFF] py-2 font-medium text-xs">Dolor sit amet consectetur. Ut urna diam quis sagittis.<br> Elit elit 
+                                enim sagittis turpis in magna.<br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="font-medium text-xl text-white  bg-[#FF4240]">Register Now!</button></div>
+                            <div><br>
+                                <div class="text-center">
+                                    <h3 class="text-[#131318] text-3xl font-extrabold">Our New Products</h3>
+                                    <p class="text-xs font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br>Purus urna in sit nullam proin. </p>
+                                </div>
+                                <br>
+                                <br>
+                               <section class="flex gap-10 grid grid-cols-1 md:grid-cols-2">
+
+
+                                <section >
+                                    
+                                <div class="flex">
+                                    <div><img src="Images/5.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div><br><br><br>
+                                        
+                                            
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div><img src="Images/7.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div>
+                                        
+                                            
+                                    </div>
+                                </div><br><br><br>
+                                <div class="flex">
+                                    <div><img src="Images/9.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div>
+                                        
+                                            
+                                    </div>
+                                </div>
+                                </section>
+                                <section>
+                                    
+                                <div class="flex">
+                                    <div><img src="Images/6.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div><br><br><br>
+                                        
+                                            
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div><img src="Images/8.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div>
+                                        
+                                            
+                                    </div>
+                                </div><br><br><br>
+                                <div class="flex">
+                                    <div><img src="Images/10.png" alt=""></div>
+                                    <div>
+                                        <div>
+                                            <div class="flex">
+                                                <span class="flex">
+                                                    <img src="Images/Frame.png" alt="">
+                                                    <h1>5.0</h1>
+                                                </span>
+                                                <span class="flex"><img src="Images/Frame (1).png" alt="">
+                                                <h3>20</h3></span>
+                                                <span class="flex"><img src="Images/Frame (2).png" alt="">
+                                                <h3>200</h3></span>
+                                            </div>
+                                            <h3 class="text-2xl font-bold py-2">World Cup Flags Football</h3>
+                                            <p class="text-xl font-medium py-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                            <h3 class="text-red-500 text-2xl font-bold">Price - $22.00</h3>
+                                        </div>
+                                        
+                                            
+                                    </div>
+                                </div>
+                                </section>
+                               </section><br><br>
+                               <div class="text-center">
+                                <h3 class="font-extrabold text-3xl text-black py-2">Clients Question</h3>
+                                <p class="font-medium text-xl">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br>Purus urna in sit nullam proin. </p>
+                               </div><br><br>
+                               <section class="flex gap-7 grid grid-cols-1 md:grid-cols-2">
+                                        <img src="Images/11.png" alt="">
+                                        <div>
+                                            <div class="flex ">
+                                                <div>
+                                                    <h3 class="font-extrabold">Our Equipment</h3>
+                                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br> sagittis turpis in magna.</p>
+                                                </div>
+                                                <span><img src="Images/Frame (4).png" alt=""></span>
+                                            </div><br>
+                                            <!-- 2nd -->
+                                            
+                                            <div>
+                                                <div class="flex gap-32 ">
+                                                    <div>
+                                                        <h3 class="font-extrabold">Hockey Training</h3>
+                                                    </div>
+                                                    <span><img src="Images/Frame (3).png" alt=""></span>
+                                                </div>
+                                            </div><br>
+                                            <!-- 3rd -->
+                                            <div>
+                                                <div class="flex gap-32">
+                                                    <div>
+                                                        <h3 class="font-extrabold">Private Lessons</h3>
+                                                    
+                                                    </div>
+                                                    <span><img src="Images/Frame (3).png" alt=""></span>
+                                                </div>
+                                            </div><br>
+                                            <!-- 5m -->
+                                            <div>
+                                                <div class="flex gap-40">
+                                                    <div>
+                                                        <h3 class="font-extrabold">Ski Touring</h3>
+                                                    </div>
+                                                    <span><img src="Images/Frame (3).png" alt=""></span>
+                                                </div>
+                                            </div><br>
+                                            <!-- 6x -->
+                                            <div>
+                                                <div class="flex gap-48">
+                                                    <div>
+                                                        <h3 class="font-extrabold">Booking</h3>
+                                                    </div>
+                                                    <span><img src="Images/Frame (3).png" alt=""></span>
+                                                </div>
+                                            </div><br>
+                                            <!-- 4th -->
+                                            <div>
+                                                <div class="flex gap-48">
+                                                    <div>
+                                                        <h3 class="font-extrabold">Pricings</h3>
+                                                    </div>
+                                                    <span><img src="Images/Frame (3).png" alt=""></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </section><br><br><br>
+                                        <div class="text-center">
+                                            <h3  class="text-3xl font-extrabold text-black py-2">Get In Touch</h3>
+                                            <p class="text-xl font-bold">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis<br> placerat dolor. Purus urna in sit nullam proin. </p>
+                                        </div><br><br>
+                                        <section class="flex gap-20 w-96 h-auto grid grid-cols-1 md:flex lg:flex">
+                                            <div>
+                                                <div class="bg-red-50 w-72 h-44 text-center py-8">
+                                                    <img class="px-7" src="Images/Group 1171275317.png" alt="">
+                                                    <h3>Phone Number : <br>
+                                                        (+62) 123-321-543</h3>
+                                                </div><br>
+                                                <div class=" w-72 h-44 text-center py-8 bg-rose-50">
+                                                    <img class="px-7" src="Images/Group 1171275318.png" alt="">
+                                                    <h3 >Email :</h3>
+                                                      <p>hockeys@support.com</p>
+                                                </div><br>
+                                                <div class="bg-amber-100 w-72 h-44 text-center py-8">
+                                                    <img class="px-7" src="Images/Group 1171275321.png" alt="">
+                                                    <h3>Location :
+                                                        152/1 Mohakhali Wireless Gate </h3>
+                                                </div>
+                                            </div>
+                                            <!-- next -->
+                                            
+                                         <section class=" ">
+                                            <h3 class="mx-10">Your Name</h3>
+                                            <div class="flex">
+                                                <input class="p-10 mx-10 border-spacing-1 bg-slate-300 text-xl font-bold" type="text" placeholder="Enter your full name">
+                                                <input class="p-10 border-spacing-1 bg-slate-300 text-xl font-bold " type="text" placeholder="Enter your email">
+                                              </div> <br>
+                                              <h3 class="mx-10">Subject</h3>
+                                            <div class="flex">
+                                                <input class="p-10 mx-10 border-spacing-1 bg-slate-300 text-xl font-bold" type="text" placeholder="Enter your subject">
+                                                <input class="p-10 border-spacing-1 bg-slate-300 text-xl font-bold" type="text" placeholder="Enter your phone number">
+                                              </div><br>
+                                              <h3 class="mx-6">Message</h3>
+                                              <div class="w-full h-64 text-[#FFF]  mx-5">
+                                                <input type="text" placeholder="Write your message">
+                                              </div>
+                                              <button class="text-white bg-[#FF4240] mx-5 w-full">Send Message</button>
+                                            </section><br><br>
+
+           
+           
+    </main><br><br>
+        <footer class="container mx-auto">
+            <section class="w-full h-32  bg-[#FFF]">
+                <div class="text-center "> 
+                    <h3 class="text-[#131318] text-xl font-extrabold py-2">Social Media</h3>
+                    <img class="mx-auto " src="Images/Social (1).svg" alt="">
+                </div>
+            </section><br>
+            <div class="footer p-10 bg-base-200 text-base-content bg-black">
+                <nav>
+                    <h3 class="text-white text-xl font-extrabold">Get In Touch</h3>
+                    <p class="text-white">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor.<br> Purus urna in sit nullam proin. </p>
+                    <div class="flex"><img src="Images/Frame (5).png" alt=""><h3 class="text-white">hockeys@support.com</h3></div>
+                    <div class="flex"><img src="Images/Frame (6).png" alt=""><h3 class="text-white">01826978811</h3></div>
+                  </nav> 
+                <nav>
+                    <header class="footer-title text-white">Company</header> 
+                    <a class="link link-hover text-white">About us</a>
+                    <a class="link link-hover text-white">Contact</a>
+                    <a class="link link-hover text-white">Jobs</a>
+                    <a class="link link-hover text-white">Press kit</a>
+                </nav> 
+                <nav>
+                    <header class="footer-title text-white">support</header> 
+                    <a class="link link-hover text-white">Branding</a>
+                    <a class="link link-hover text-white">Design</a>
+                    <a class="link link-hover text-white">Marketing</a>
+                    <a class="link link-hover text-white">Advertisement</a>
+                </nav> 
+                <nav>
+                  <header class="footer-title text-white">Services</header> 
+                  <a class="link link-hover text-white">Terms of use</a>
+                  <a class="link link-hover text-white">Privacy policy</a>
+                  <a class="link link-hover text-white">Cookie policy</a>
+                </nav>
+            </div>
+          </footer>
+    
 </body>
 </html>
